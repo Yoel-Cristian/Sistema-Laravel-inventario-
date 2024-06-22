@@ -1,8 +1,5 @@
-@extends('layout.plantilla')
+<x-app-layout>
 
-@section('titulo', 'principal')
-
-@section('contenido')
 
 
     <div class="p-8 md:p-12 lg:px-10 lg:py-5 bg-slate-900/50">
@@ -122,4 +119,5 @@
     {{ $prod->links() }};
 
 
-@endsection
+
+</x-app-layout>
