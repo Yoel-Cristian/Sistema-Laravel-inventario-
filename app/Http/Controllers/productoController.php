@@ -69,31 +69,6 @@ class productoController extends Controller
         );
     }
 
-
-
- /*    public function desactivar(Producto $id2)
-    {
-        $id2->delete(); //usamos el metodo delete para eliminar el objeto
-        return redirect()->Route('producto.principal');
-        //redireccionamos a la  vista index.
-    } */
-
-
-/*     public function destroy(Producto $id)
-    {
-        $id->forceDelete(); //usamos el metodo delete para eliminar el objeto
-        return redirect()->Route('producto.principal');
-        //redireccionamos a la  vista index.
-    } */
-/*     public function activar(Producto $id2)
-    {
-        $id2->restore($id2);
-        return redirect()->Route('producto.principal');
-        //redireccionamos a la  vista index.
-    }
- */
-
-
     public function destroy($id)
 {
     $producto = Producto::withTrashed()->find($id);
