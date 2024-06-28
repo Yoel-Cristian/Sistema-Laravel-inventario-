@@ -43,13 +43,15 @@ Route::middleware([
 
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
-    Route::get('categoria', [categoriaController::class, 'principal'])->name('categoria.principal');
-    Route::get('categoria/crear', [categoriaController::class, 'crear'])->name('categoria.crear');
-    Route::post('categoria', [categoriaController::class, 'store'])->name('categoria.store');
-    Route::get('categoria/{variable}', [categoriaController::class, 'mostrar'])->name('categoria.mostrar');
-    Route::get('categoria/{categoria}/edit', [categoriaController::class, 'editar'])->name('categoria.editar');
-    Route::put('categoria/{categoria}', [categoriaController::class, 'update'])->name('categoria.update');
-    Route::delete('categoria/{id}', [categoriaController::class, 'borrar'])->name('categoria.borrar');
-    Route::get('desactiva-categoria/{id}', [categoriaController::class, 'desactivacategoria'])->name('desactivacat');
-    Route::get('activa-categoria/{id}', [categoriaController::class, 'activacategoria'])->name('activacat');
- });
+    Route::controller(categoriaController::class)->group(function () {
+        Route::get('categoria', 'principal')->name('categoria.principal');
+        Route::get('categoria/crear',  'crear')->name('categoria.crear');
+        Route::post('categoria',  'store')->name('categoria.store');
+        Route::get('categoria/{variable}',  'mostrar')->name('categoria.mostrar');
+        Route::get('categoria/{categoria}/edit',  'editar')->name('categoria.editar');
+        Route::put('categoria/{categoria}', 'update')->name('categoria.update');
+        Route::delete('categoria/{id}', 'borrar')->name('categoria.borrar');
+        Route::get('desactiva-categoria/{id}', 'desactivacategoria')->name('desactivacat');
+        Route::get('activa-categoria/{id}', 'activacategoria')->name('activacat');
+    });
+});

@@ -13,7 +13,6 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In inventore, rerum ipsa quidem veniam omnis ab voluptate provident tenetur placeat ad, delectus cum eum consequatur necessitatibus quia sed veritatis natus!</p><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In inventore, rerum ipsa quidem veniam omnis ab voluptate provident tenetur placeat ad, delectus cum eum consequatur necessitatibus quia sed veritatis natus!</p><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In inventore, rerum ipsa quidem veniam omnis ab voluptate provident tenetur placeat ad, delectus cum eum consequatur necessitatibus quia sed veritatis natus!</p><br>lorem
-
             </div>
         </div>
     </div>
