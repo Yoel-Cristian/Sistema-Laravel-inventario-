@@ -1,8 +1,3 @@
-{{-- @extends('layout.plantilla')
-
-@section('titulo', 'crear')
-
-@section('contenido') --}}
 <x-app-layout>
     <header>
     <div class=" from-teal-100 via-teal-100 to-teal-100 bg-gradient-to-br">
@@ -33,4 +28,3 @@
     </div>
  </div>
 </x-app-layout>
-{{-- @endsection --}}
