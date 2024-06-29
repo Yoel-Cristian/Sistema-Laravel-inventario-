@@ -28,7 +28,11 @@
                         {{ __('CATEGORIAS') }}
                     </x-nav-link>
                 </div>
-
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('role.principal') }}" :active="request()->routeIs('role.principal')">
+                        {{ __('ROLES') }}
+                    </x-nav-link>
+                </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link href="{{ route('profile.principal') }}" :active="request()->routeIs('profile.principal')">
                         {{ __('PERFILES') }}

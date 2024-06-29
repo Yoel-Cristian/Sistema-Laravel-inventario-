@@ -1,13 +1,5 @@
-@extends('layout.plantilla')
 
-@section('titulo', 'mostrar')
-
-@section('contenido')
-
-
-    <br>
-
-
+<x-app-layout>
     <div class="container size-1/2 m-auto">
         <div class="px-4 sm:px-0">
             <h1 class="text-base font-semibold leading-7 text-gray-900">"El ID del producto es: " {{ $producto->id }}</h1>
@@ -85,5 +77,8 @@
 
 
 
+   
 
-@endsection
+
+    </x-app-layout>
+    
