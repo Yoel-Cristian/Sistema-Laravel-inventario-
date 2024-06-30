@@ -8,21 +8,16 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-blue-100 dark:bg-blue-800 overflow-hidden shadow-xl sm:rounded-lg p-6">
-                <p class="mb-4 p-4 ">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In inventore, rerum ipsa quidem veniam omnis ab voluptate provident tenetur placeat ad, delectus cum eum consequatur necessitatibus quia sed veritatis natus!
+                <p class="mb-4 p-4">
+                    Hola, soy Yoel Cristian Quispe Diaz, un estudiante de Ingeniería Informática. Me apasiona todo lo relacionado con las computadoras y cómo estas pueden mejorar nuestra vida cotidiana.
                 </p>
-                <p class="mb-4 p-4 ">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In inventore, rerum ipsa quidem veniam omnis ab voluptate provident tenetur placeat ad, delectus cum eum consequatur necessitatibus quia sed veritatis natus!
+                <p class="mb-4 p-4">
+                    Estoy estudiando en la universidad, donde he aprendido a programar y a entender cómo funcionan las redes y los sistemas informáticos. Estos conocimientos me están preparando para mi futuro profesional.
                 </p>
-                <p class="mb-4 p-4 ">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In inventore, rerum ipsa quidem veniam omnis ab voluptate provident tenetur placeat ad, delectus cum eum consequatur necessitatibus quia sed veritatis natus!
+                <p class="mb-4 p-4">
+                    En mi tiempo libre, me gusta relajarme jugando videojuegos, pasar tiempo con mis amigos y mi familia, y siempre estoy buscando aprender algo nuevo sobre tecnología.
                 </p>
-                <p class="mb-4 p-4 ">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In inventore, rerum ipsa quidem veniam omnis ab voluptate provident tenetur placeat ad, delectus cum eum consequatur necessitatibus quia sed veritatis natus!
-                </p>
-                <p class="mb-4 p-4 ">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In inventore, rerum ipsa quidem veniam omnis ab voluptate provident tenetur placeat ad, delectus cum eum consequatur necessitatibus quia sed veritatis natus!
-                </p>
+                
             </div>
         </div>
     </div>

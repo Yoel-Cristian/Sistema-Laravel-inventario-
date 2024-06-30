@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\inicioController;
 use App\Http\Controllers\productoController;
 use App\Http\Controllers\categoriaController;
+use App\Http\Controllers\EstudianteController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\ProfileController;
 
@@ -83,5 +84,19 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
         Route::delete('profile/{id}', 'destroy')->name('profile.borrar');
         Route::get('desactiva-profile/{id}', 'desactivar')->name('desactivarprofile');
         Route::get('activa-profile/{id}', 'activar')->name('activarprofile');
+    });
+});
+
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
+    Route::controller(EstudianteController::class)->group(function () {
+        Route::get('estudiantes', 'principal')->name('estudiantes.principal');
+        Route::get('estudiantes/crear', 'crear')->name('estudiantes.crear');
+        Route::post('estudiantes', 'store')->name('estudiantes.store');
+        Route::get('estudiantes/{id}', 'mostrar')->name('estudiantes.mostrar');
+        Route::get('estudiantes/{estudiante}/edit', 'editar')->name('estudiantes.editar');
+        Route::put('estudiantes/{estudiante}', 'update')->name('estudiantes.update');
+        Route::delete('estudiantes/{id}', 'borrar')->name('estudiantes.borrar');
+        Route::get('desactiva-estudiante/{id}', 'desactivarEstudiante')->name('desactivar.estudiante');
+        Route::get('activa-estudiante/{id}', 'activarEstudiante')->name('activar.estudiante');
     });
 });
